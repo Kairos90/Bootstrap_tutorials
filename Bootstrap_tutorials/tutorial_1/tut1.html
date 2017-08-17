@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Boostrap Tutorial n°1</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <style>
+    .jumbotron {
+        background-color: #2E2D88;
+        color: #ffffff;
+    }
+    /* Add borders for tabs */
+    .tab-content {
+        border-left: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+    }
+    .nav-tabs {
+        margin-bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Bootstrap Tutorial 1</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="well hidden-sm hidden-md hidden-lg">
+            <p> Screen &lt; 768px </p>
+        </div>
+        <div class="well hidden-md hidden-lg">
+            <p> Screen &gt;= 768px &lt; 992px </p>
+        </div>
+        <div class="well hidden-lg">
+            <p> Screen &gt;= 992px &lt; 1200px </p>
+        </div>
+        <div class="well">
+            <p> Screen &gt; 1200px </p>
+        </div>
+    </div>
+
+    <!-- GRID CONTAINER WITH COLLAPSIBLE CONTENT
+    <div class="container"></div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+            <h4><a href="#col1Content" data-toggle="collapse"> Column 1 </a></h4>
+            <div id="col1Content" class="collapse in">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Morbi finibus dapibus sem et sodales. Nullam in nisi consequat,
+                accumsan urna sed, pharetra lorem.
+                Nullam et justo fringilla, gravida leo id, gravida massa.
+                Curabitur lobortis tellus eget consectetur maximus.
+                Cras tempus elit convallis, condimentum augue quis, cursus nisl.
+                Proin volutpat tempus tempor. Nulla blandit, diam vel rutrum posuere, quam nisi sollicitudin ex, 
+                sed pulvinar ante neque sit amet mi. Sed auctor sem lorem, vel tristique arcu dapibus et.
+                Pellentesque eu libero lorem. Suspendisse potenti. Vivamus vel elementum nibh, ac euismod purus.
+                Nullam at lobortis nunc. Fusce non pellentesque nisi, et venenatis dui.
+                Duis ac velit vestibulum, rutrum diam eu, tincidunt quam. Maecenas id eros dui.
+                Nullam sit amet tempor tellus, eget mattis enim.
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+            <h4><a href="#col2Content" data-toggle="collapse"> Column 2 </a></h4>
+            <div id="col2Content" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Morbi finibus dapibus sem et sodales. Nullam in nisi consequat,
+                accumsan urna sed, pharetra lorem.
+                Nullam et justo fringilla, gravida leo id, gravida massa.
+                Curabitur lobortis tellus eget consectetur maximus.
+                Cras tempus elit convallis, condimentum augue quis, cursus nisl.
+                Proin volutpat tempus tempor. Nulla blandit, diam vel rutrum posuere, quam nisi sollicitudin ex, 
+                sed pulvinar ante neque sit amet mi. Sed auctor sem lorem, vel tristique arcu dapibus et.
+                Pellentesque eu libero lorem. Suspendisse potenti. Vivamus vel elementum nibh, ac euismod purus.
+                Nullam at lobortis nunc. Fusce non pellentesque nisi, et venenatis dui.
+                Duis ac velit vestibulum, rutrum diam eu, tincidunt quam. Maecenas id eros dui.
+                Nullam sit amet tempor tellus, eget mattis enim.
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h4><a href="#col3Content" data-toggle="collapse"> Column 3 </a></h4>
+                <div id="col3Content" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi finibus dapibus sem et sodales. Nullam in nisi consequat,
+                    accumsan urna sed, pharetra lorem.
+                    Nullam et justo fringilla, gravida leo id, gravida massa.
+                    Curabitur lobortis tellus eget consectetur maximus.
+                    Cras tempus elit convallis, condimentum augue quis, cursus nisl.
+                    Proin volutpat tempus tempor. Nulla blandit, diam vel rutrum posuere, quam nisi sollicitudin ex, 
+                    sed pulvinar ante neque sit amet mi. Sed auctor sem lorem, vel tristique arcu dapibus et.
+                    Pellentesque eu libero lorem. Suspendisse potenti. Vivamus vel elementum nibh, ac euismod purus.
+                    Nullam at lobortis nunc. Fusce non pellentesque nisi, et venenatis dui.
+                    Duis ac velit vestibulum, rutrum diam eu, tincidunt quam. Maecenas id eros dui.
+                    Nullam sit amet tempor tellus, eget mattis enim.
+                </div>
+            </div>
+    </div>
+    -->
+    
+    <!-- JUMBOTRON TUTORIAL BUTTONS
+    <div class="jumbotron">
+        <p>Ciao io sono un paragrafo fatto di fretta in bootstrap!</p>
+        <p>
+            <a href="#" class="btn btn-default btn-lg" role="button"> More Info </a>
+            <button type="submit" class="btn btn-danger" role="button"> Button </button>
+            <input type="button" value="Info" class="btn btn-info">
+
+            <button type="submit" class="btn-primary btn-sm"> Primary </button>
+            <button type="submit" class="btn btn-success btn-xs"> Success </button>
+            <button type="submit" class="btn btn-warning btn-lg"> Warning </button>
+            <button type="submit" class="btn btn-link btn-lg"> Link </button>
+            
+            <button type="button" class="btn btn-lg btn-primary" disabled="disabled"> Primary </button>
+            <a href="#" class="btn btn-default btn-lg disabled" role="button"> Link </a>
+            <div class="btn-group btn-group-lg" role="group">
+
+                <button type="button" class="btn btn-default"> Small </button>
+                <button type="button" class="btn btn-default"> Medium </button>
+                <button type="button" class="btn btn-default"> Large </button>
+
+            </div>
+
+        </p>
+    </div>
+     -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
